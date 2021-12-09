@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TietFourteen</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" href="t14.PNG" />
+    <style>
+        html,
+        body,
+        div,
+        button,
+        header,
+        footer,
+        section,
+        table,
+        a,
+        nav {
+            cursor: url(https://img.icons8.com/dusk/64/000000/cursor.png), default;
+        }
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            background: #c7c7c7;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: rgb(119, 119, 119);
+            border-radius: 1px;
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: rgb(46, 46, 46);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+                <img width="50px" src="/t14.PNG" alt="">
+                <span class="ml-3 text-xl">TIET14</span>
+            </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+                <a href="schedule14.html" class="mr-5 hover:text-gray-900">Schedule</a>
+                <a href="test14.html" class="animate-bounce font-bold mr-5 hover:text-gray-900">MST's</a>
+                <a href="study14.html" class="mr-5 hover:text-gray-900">Study Material</a>
+                <a href="notice14.html" class="mr-5 hover:text-gray-900">Notice Board</a>
+          </nav>
+          
+        </div>
+      </header>
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <div class="text-center lg:w-2/3 w-full">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">"Don’t stress. Do your best. Forget the rest."</h1><br>
+
+                <div class="flex justify-center">
+                    <input type="text" id="myInput" name="hero-field" placeholder="Filter your table" class="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-green-200 focus:bg-transparent border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+
+            </div>
+            <table class="mt-10 sm:w-1/3 lg:w-2/3 border-collapse border border-green-800 ">
+                <thead>
+                    <tr>
+                        <th class="border border-green-600 px-2 ...">Date</th>
+                        <th class="border border-green-600 px-2 ...">Subject</th>
+                        <th class="border border-green-600 px-2 ...">Quiz no.</th>
+                        <th class="border border-green-600 px-2 ...">Syllabus</th>
+
+
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">4 Jan </td>
+                        <td class="border border-green-600 px-2 ...">Evs</td>
+                        <td class="border border-green-600 px-2 ...">1 </td>
+                        <td class="border border-green-600 px-2 ...">Water Pollution</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">5 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Mechanics</td>
+                        <td class="border border-green-600 px-2 ...">1</td>
+                        <td class="border border-green-600 px-2 ...">Complete syllabus covered upto Friction.</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">6 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Maths</td>
+                        <td class="border border-green-600 px-2 ...">1</td>
+                        <td class="border border-green-600 px-2 ...">Infinite Seq 8.1 to Alternating Series 8.7</td>
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">7 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Computer</td>
+                        <td class="border border-green-600 px-2 ...">1 </td>
+                        <td class="border border-green-600 px-2 ...">Computers Fundamentals, Algorithms and Programming Languages(Slide set1)</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">8 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Chemistry</td>
+                        <td class="border border-green-600 px-2 ...">1</td>
+                        <td class="border border-green-600 px-2 ...">Atomic Spectroscopy that is FES & AAS</td>
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">11 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Evs</td>
+                        <td class="border border-green-600 px-2 ...">2 </td>
+                        <td class="border border-green-600 px-2 ...">Solid Waste Management</td>
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">12 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Mechanics</td>
+                        <td class="border border-green-600 px-2 ...">2</td>
+                        <td class="border border-green-600 px-2 ...">Complete syllabus covered upto Friction.</td>
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">14 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Computer</td>
+                        <td class="border border-green-600 px-2 ...">2 </td>
+                        <td class="border border-green-600 px-2 ...">C Language Basics, Sequential and Looping control Structures (Slide set 2 and set 3)</td>
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">15 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Chemistry</td>
+                        <td class="border border-green-600 px-2 ...">2 </td>
+                        <td class="border border-green-600 px-2 ...">UV-Vis Spectroscopy & Beer-Lambert’s Law
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">16 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Electrical</td>
+                        <td class="border border-green-600 px-2 ...">Sessional quiz 1</td>
+                        <td class="border border-green-600 px-2 ..."> The entire syllabus from previous Quiz-1 and Quiz-2 (i.e. DC Circuits, transients and AC series circuit including resonance)
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">18 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Evs</td>
+                        <td class="border border-green-600 px-2 ...">3 </td>
+                        <td class="border border-green-600 px-2 ...">Air Pollution</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">19 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Mechanics</td>
+                        <td class="border border-green-600 px-2 ...">3</td>
+                        <td class="border border-green-600 px-2 ...">Complete syllabus covered upto Friction.</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">20 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Maths</td>
+                        <td class="border border-green-600 px-2 ...">2</td>
+                        <td class="border border-green-600 px-2 ...">Power,Taylor,Maclaurin,Error estimation of taylor 8.8 to 8.10 </td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">21 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Computer</td>
+                        <td class="border border-green-600 px-2 ...">3 </td>
+                        <td class="border border-green-600 px-2 ...">Functions(Slide set 4)</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">22 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Chemistry</td>
+                        <td class="border border-green-600 px-2 ...">3</td>
+                        <td class="border border-green-600 px-2 ...">IR Spectroscopy & Polymers</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">23 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Electrical</td>
+                        <td class="border border-green-600 px-2 ...">Sessional quiz 2</td>
+                        <td class="border border-green-600 px-2 ...">This quiz will be conducted on the basis of Lab experiments. (Please refer list of experiments for more detail).</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">27 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Electrical</td>
+                        <td class="border border-green-600 px-2 ...">1</td>
+                        <td class="border border-green-600 px-2 ...">DC Circuits: Kirchhoff’s voltage and current laws; power dissipation; Voltage source and current source; Mesh and Nodal analysis; Star-delta transformation; Superposition theorem; Thevenin’s theorem; Norton’s theorem; Maximum power
+                            transfer theorem; Millman’s theorem and Reciprocity theorem.</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">28 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Electrical</td>
+                        <td class="border border-green-600 px-2 ...">2</td>
+                        <td class="border border-green-600 px-2 ...">Steady state analysis of DC Circuits: Time constant, transient response of RL, RC and RLC Circuits. AC Circuits: Sinusoidal sources, RC, RL and RLC circuits, Concept of Phasors, Phasor representation of circuit elements, Complex
+                            notation representation, Single phase AC Series circuits, power dissipation in ac circuits, power factor correction, Resonance in series circuits.</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">29 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Electrical</td>
+                        <td class="border border-green-600 px-2 ...">3</td>
+                        <td class="border border-green-600 px-2 ...">The entire syllabus from previous Quiz-1 and Quiz-2 (i.e. DC Circuits, transients and AC series circuit including resonance)</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">30 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Maths</td>
+                        <td class="border border-green-600 px-2 ...">3</td>
+                        <td class="border border-green-600 px-2 ...">Unit 8 full 8.1 to 8.10</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="border border-green-600 px-2 ...">30 Jan</td>
+                        <td class="border border-green-600 px-2 ...">Electrical</td>
+                        <td class="border border-green-600 px-2 ...">Sessional quiz 3</td>
+                        <td class="border border-green-600 px-2 ...">This quiz will be conducted for the entire syllabus of UEE001</td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <strong>All the Best Guys!</strong>
+        </div>
+
+    </section>
+
+
+    <footer class="text-gray-600 body-font bg-gray-800 ">
+        <div class="container px-5 py-5 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img width="60px" src="/t14.PNG" alt="">
+
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© made with ❤
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a href="https://www.instagram.com/_.bhanviiii._" target="_blank" class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        
+        <a href="https://wa.me/916283764532" target="_blank" class="ml-3 text-gray-500 fa fa-whatsapp" style="font-size:26px"></a> 
+      </span>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
